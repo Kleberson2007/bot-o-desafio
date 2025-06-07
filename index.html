@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgb(211, 231, 248);
+        }
+        button {
+            width: 100px;
+            height: 50px;
+            font-size: 40px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Botão</h1>
+    <button onclick="adicionar()">0</button>
+
+    <script>
+        var numero = 0;
+
+        function adicionar() {
+            numero++;
+            render();
+        }
+
+        function render() {
+            document.querySelector("button").innerText = numero;
+        }
+
+        render;
+    </script>
+</body>
+</html>
