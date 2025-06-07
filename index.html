@@ -14,7 +14,7 @@
 </head>
 <body>
     <h1 id="titulo">Contadores</h1>
-    <button id="botao1" onclick="adicionar()">0</button>
+    <button id="botao1" onclick="adicionar()">total <p id="number">0</p></button>
 
     <script>
         var numero = 0;
@@ -25,7 +25,7 @@
         }
 
         function render() {
-            document.querySelector("#botao1").innerText = numero;
+            document.querySelector("#number").innerText = numero;
         }
 
         render();
